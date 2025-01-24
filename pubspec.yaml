@@ -1,0 +1,199 @@
+name: my_flutter_template_v2
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+
+  # networks
+  http: ^1.2.2
+  cached_network_image: ^3.4.0
+
+  # ends here
+
+  # State management
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.6
+  get_it: ^7.7.0
+  freezed_annotation: ^2.4.4
+  freezed:
+  equatable: ^2.0.5
+  # ends here
+
+  # Storage
+  shared_preferences: ^2.3.5
+  path_provider: ^2.0.9
+  hive: ^2.0.4
+  hive_flutter: ^1.1.0
+
+  # ends here
+
+  fluttertoast: ^8.2.5
+  another_flushbar: ^1.12.30
+
+  logger: ^2.4.0
+  flutter_screenutil: ^5.9.3
+  font_awesome_flutter: ^10.7.0
+  clipboard: ^0.1.3
+  shimmer: ^3.0.0
+  url_launcher: ^6.0.10
+  local_auth: ^2.1.7
+  flutter_html: ^3.0.0-beta.1
+  onesignal_flutter: ^5.1.5
+  permission_handler: ^11.3.1
+  image_picker: ^1.1.0
+  package_info_plus: ^8.0.0
+  modal_bottom_sheet: ^3.0.0-pre
+  #  flutter_inappwebview:
+  drop_down_list:
+    git:
+      url: https://github.com/quiet-programmer/drop_down_list.git
+      ref: dfb7ec1
+  flutter_svg: ^2.0.6
+  syncfusion_flutter_datepicker: ^26.2.14
+  get_time_ago: ^1.1.8
+  lucide_icons: ^0.257.0
+  share_plus: ^10.0.2
+  pull_to_refresh_plus: ^2.0.3
+  syncfusion_flutter_barcodes: ^26.2.14
+  ai_barcode_scanner: ^3.4.1
+  huge_icons:
+    git:
+      url: https://github.com/AminAhmadyDeveloper/huge_icons.git
+  otp_text_field_v2: ^1.0.3
+  flashy_flushbar:
+    git:
+      url: https://github.com/quiet-programmer/flashy_flushbar.git
+      ref: c9af9f8
+  yaml: ^3.1.2
+  onscreen_num_keyboard: ^1.0.4
+  analyzer: ^6.7.0
+  qr_flutter:
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
+  change_app_package_name: ^1.0.0
+  flutter_launcher_icons: ^0.13.1
+  hive_generator: ^2.0.0
+  build_runner: ^2.4.12
+  flutter_inappwebview_android:
+    git:
+      url: https://github.com/holzgeist/flutter_inappwebview
+      path: flutter_inappwebview_android
+      ref: d89b1d32638b49dfc58c4b7c84153be0c269d057
+
+flutter_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/dev/icon.png"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/gifs/
+    - assets/dev/
+    - assets/icons/
+    - assets/svg/
+    - api_credentials.yaml
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: PublicSansBlack
+      fonts:
+        - asset: assets/fonts/PublicSans-Black.otf
+
+    - family: PublicSansBold
+      fonts:
+        - asset: assets/fonts/PublicSans-Bold.otf
+
+    - family: PublicSansExtraBold
+      fonts:
+        - asset: assets/fonts/PublicSans-ExtraBold.otf
+
+    - family: PublicSansExtraLight
+      fonts:
+        - asset: assets/fonts/PublicSans-ExtraLight.otf
+
+    - family: PublicSansLight
+      fonts:
+        - asset: assets/fonts/PublicSans-Light.otf
+
+    - family: PublicSansMedium
+      fonts:
+        - asset: assets/fonts/PublicSans-Medium.otf
+
+    - family: PublicSansRegular
+      fonts:
+        - asset: assets/fonts/PublicSans-Regular.otf
+
+    - family: PublicSansSemiBold
+      fonts:
+        - asset: assets/fonts/PublicSans-SemiBold.otf
+
+    - family: PublicSansThin
+      fonts:
+        - asset: assets/fonts/PublicSans-Thin.otf
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
