@@ -1,16 +1,14 @@
-# my_flutter_template_v2
+## QP Flutter Template
 
-A new Flutter project.
+<p>So this is me trying to make a flutter template, if you have any issues please let me know.</p>
 
-## Getting Started
+<p>You will be given a Counter App page that uses Cubit and not SetState, 
+the project is structured on the Bloc Architecture, and it has been setup 
+to suit my needs for building flutter app, anytime I want to make a new project I 
+will use this template </p>
 
-This project is a starting point for a Flutter application.
+<p>But I built a CLI in Go to help me clone the project and make it for 
+any project I want. The CLI will make sure to change the package name in 
+yaml and in all the dart files to suit the name you created for the app</p>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p> Here is the repo to the CLI <a href='https://github.com/sudo-which-qp/qp_flutter_cli.git'><QP></QP></a></p>
