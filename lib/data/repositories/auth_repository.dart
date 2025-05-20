@@ -1,8 +1,8 @@
-import 'package:my_flutter_template_v2/data/exceptions/app_exceptions.dart';
-import 'package:my_flutter_template_v2/data/models/user/user_model.dart';
-import 'package:my_flutter_template_v2/data/network/network_services_api.dart';
-import 'package:my_flutter_template_v2/helpers/hive_manager.dart';
-import 'package:my_flutter_template_v2/utils/const_values.dart';
+import 'package:bible_emi_app/data/exceptions/app_exceptions.dart';
+import 'package:bible_emi_app/data/models/user/user_model.dart';
+import 'package:bible_emi_app/data/network/network_services_api.dart';
+import 'package:bible_emi_app/helpers/hive_manager.dart';
+import 'package:bible_emi_app/utils/const_values.dart';
 
 class AuthRepository {
   final NetworkServicesApi _api;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_flutter_template_v2/utils/contants/asset_dir.dart';
+import 'package:bible_emi_app/utils/contants/asset_dir.dart';
 
 
 class MTextStyle {

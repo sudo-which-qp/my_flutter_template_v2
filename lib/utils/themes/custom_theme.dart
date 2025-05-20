@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_flutter_template_v2/utils/colors/m_colors.dart';
+import 'package:bible_emi_app/utils/colors/m_colors.dart';
 
 ThemeData buildLightTheme() => ThemeData.light().copyWith(
   cardColor: Colors.white,

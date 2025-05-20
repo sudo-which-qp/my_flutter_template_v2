@@ -3,10 +3,10 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:http/http.dart' as http;
-import 'package:my_flutter_template_v2/data/exceptions/app_exceptions.dart';
-import 'package:my_flutter_template_v2/data/network/base_api_service.dart';
-import 'package:my_flutter_template_v2/utils/const_values.dart';
-import 'package:my_flutter_template_v2/utils/contants/api_constant.dart';
+import 'package:bible_emi_app/data/exceptions/app_exceptions.dart';
+import 'package:bible_emi_app/data/network/base_api_service.dart';
+import 'package:bible_emi_app/utils/const_values.dart';
+import 'package:bible_emi_app/utils/contants/api_constant.dart';
 
 class NetworkServicesApi implements BaseApiService {
   @override

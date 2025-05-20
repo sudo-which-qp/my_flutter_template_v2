@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:my_flutter_template_v2/utils/colors/m_colors.dart';
-import 'package:my_flutter_template_v2/utils/tools/money_formatter.dart';
-import 'package:my_flutter_template_v2/utils/tools/sized_box_ex.dart';
+import 'package:bible_emi_app/utils/colors/m_colors.dart';
+import 'package:bible_emi_app/utils/tools/money_formatter.dart';
+import 'package:bible_emi_app/utils/tools/sized_box_ex.dart';
 
 class MTextField extends StatefulWidget {
   final TextEditingController? controller;

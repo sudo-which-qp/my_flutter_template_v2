@@ -1,11 +1,11 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
-import 'package:my_flutter_template_v2/data/exceptions/app_exceptions.dart';
-import 'package:my_flutter_template_v2/data/models/user/user_model.dart';
-import 'package:my_flutter_template_v2/data/repositories/auth_repository.dart';
-import 'package:my_flutter_template_v2/utils/const_values.dart';
-import 'package:my_flutter_template_v2/utils/tools/message_dialog.dart';
+import 'package:bible_emi_app/data/exceptions/app_exceptions.dart';
+import 'package:bible_emi_app/data/models/user/user_model.dart';
+import 'package:bible_emi_app/data/repositories/auth_repository.dart';
+import 'package:bible_emi_app/utils/const_values.dart';
+import 'package:bible_emi_app/utils/tools/message_dialog.dart';
 
 part 'auth_state.dart';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
-import 'package:my_flutter_template_v2/utils/contants/api_constant.dart';
-import 'package:my_flutter_template_v2/utils/tools/hex_to_color.dart';
+import 'package:bible_emi_app/utils/contants/api_constant.dart';
+import 'package:bible_emi_app/utils/tools/hex_to_color.dart';
 
 var logger = Logger();
 

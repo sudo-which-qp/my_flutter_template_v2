@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:my_flutter_template_v2/utils/colors/m_colors.dart';
+import 'package:bible_emi_app/utils/colors/m_colors.dart';
 
 class MButton extends StatefulWidget {
   final String? title;

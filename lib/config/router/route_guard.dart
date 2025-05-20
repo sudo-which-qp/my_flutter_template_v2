@@ -1,4 +1,4 @@
-import 'package:my_flutter_template_v2/config/router/routes_name.dart';
+import 'package:bible_emi_app/config/router/routes_name.dart';
 
 class RoutesGuard {
   static final protectedRoutes = [

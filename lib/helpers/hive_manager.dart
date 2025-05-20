@@ -1,8 +1,8 @@
 import 'dart:io';
 
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:my_flutter_template_v2/data/models/user/user_model.dart';
-import 'package:my_flutter_template_v2/utils/const_values.dart';
+import 'package:bible_emi_app/data/models/user/user_model.dart';
+import 'package:bible_emi_app/utils/const_values.dart';
 import 'package:path_provider/path_provider.dart';
 
 class HiveManager {

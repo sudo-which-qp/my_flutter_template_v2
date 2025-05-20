@@ -1,8 +1,8 @@
 import 'package:get_it/get_it.dart';
-import 'package:my_flutter_template_v2/data/network/network_services_api.dart';
-import 'package:my_flutter_template_v2/data/repositories/auth_repository.dart';
-import 'package:my_flutter_template_v2/helpers/hive_manager.dart';
-import 'package:my_flutter_template_v2/state/cubits/auth_cubit/auth_cubit.dart';
+import 'package:bible_emi_app/data/network/network_services_api.dart';
+import 'package:bible_emi_app/data/repositories/auth_repository.dart';
+import 'package:bible_emi_app/helpers/hive_manager.dart';
+import 'package:bible_emi_app/state/cubits/auth_cubit/auth_cubit.dart';
 
 final GetIt getIt = GetIt.instance;
 

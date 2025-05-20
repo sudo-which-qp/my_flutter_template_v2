@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:my_flutter_template_v2/config/router/route_guard.dart';
-import 'package:my_flutter_template_v2/config/router/routes_name.dart';
-import 'package:my_flutter_template_v2/presentation/views.dart';
-import 'package:my_flutter_template_v2/services/service_locator.dart';
-import 'package:my_flutter_template_v2/state/cubits/auth_cubit/auth_cubit.dart';
-import 'package:my_flutter_template_v2/state/cubits/counter_cubit/counter_cubit.dart';
+import 'package:bible_emi_app/config/router/route_guard.dart';
+import 'package:bible_emi_app/config/router/routes_name.dart';
+import 'package:bible_emi_app/presentation/views.dart';
+import 'package:bible_emi_app/services/service_locator.dart';
+import 'package:bible_emi_app/state/cubits/auth_cubit/auth_cubit.dart';
+import 'package:bible_emi_app/state/cubits/counter_cubit/counter_cubit.dart';
 
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
