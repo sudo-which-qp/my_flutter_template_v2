@@ -8,10 +8,10 @@ ThemeData buildLightTheme() => ThemeData.light().copyWith(
   iconTheme: IconThemeData(
     color: AppColors.defaultBlack,
   ),
-  cardTheme: const CardTheme(
+  cardTheme: const CardThemeData(
     color: Colors.white,
   ),
-  dialogTheme: DialogTheme(
+  dialogTheme: DialogThemeData(
     backgroundColor: AppColors.primaryColor,
     titleTextStyle: const TextStyle(
       color: Colors.black,
@@ -38,14 +38,13 @@ ThemeData buildLightTheme() => ThemeData.light().copyWith(
   ),
   textButtonTheme: TextButtonThemeData(
     style: ButtonStyle(
-      textStyle: MaterialStateProperty.resolveWith(
+      textStyle: WidgetStateProperty.resolveWith(
             (states) => TextStyle(
           color: AppColors.defaultBlack,
         ),
       ),
     ),
   ),
-  dialogBackgroundColor: AppColors.primaryColor,
   textTheme: Typography.blackCupertino,
 );
 
@@ -56,10 +55,10 @@ ThemeData buildDarkTheme() => ThemeData.dark().copyWith(
   iconTheme: IconThemeData(
     color: AppColors.defaultWhite,
   ),
-  cardTheme: CardTheme(
+  cardTheme: CardThemeData(
     color: AppColors.cardColor,
   ),
-  dialogTheme: DialogTheme(
+  dialogTheme: DialogThemeData(
     backgroundColor: Colors.grey[900],
     titleTextStyle: const TextStyle(
       color: Colors.white,
@@ -70,10 +69,10 @@ ThemeData buildDarkTheme() => ThemeData.dark().copyWith(
     ),
   ),
   switchTheme: SwitchThemeData(
-    thumbColor: MaterialStateProperty.resolveWith(
+    thumbColor: WidgetStateProperty.resolveWith(
           (states) => Colors.grey[400],
     ),
-    trackColor: MaterialStateProperty.resolveWith(
+    trackColor: WidgetStateProperty.resolveWith(
           (states) => Colors.white,
     ),
   ),
@@ -92,7 +91,7 @@ ThemeData buildDarkTheme() => ThemeData.dark().copyWith(
   ),
   textButtonTheme: TextButtonThemeData(
     style: ButtonStyle(
-      textStyle: MaterialStateProperty.resolveWith(
+      textStyle: WidgetStateProperty.resolveWith(
             (states) => TextStyle(
           color: AppColors.defaultBlack,
         ),
