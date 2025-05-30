@@ -1,5 +1,6 @@
 import 'package:flashy_flushbar/flashy_flushbar_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:my_flutter_template_v2/config/router/routes.dart';
 import 'package:my_flutter_template_v2/config/router/routes_name.dart';
@@ -17,12 +18,22 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
+    final isDark = context.watch<ThemeCubit>().state.isDarkTheme;
+
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        statusBarIconBrightness: isDark ? Brightness.light : Brightness.dark,
+        statusBarBrightness: isDark ? Brightness.dark : Brightness.light,
+      ),
+    );
+
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       builder: (BuildContext context, Widget? child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          theme: context.watch<ThemeCubit>().state.isDarkTheme == false
+          theme: isDark == false
               ? buildLightTheme()
               : buildDarkTheme(),
           title: 'VNotes',
