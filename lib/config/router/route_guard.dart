@@ -1,4 +1,3 @@
-import 'package:my_flutter_template_v2/config/router/routes_name.dart';
 
 class RoutesGuard {
   static final protectedRoutes = [

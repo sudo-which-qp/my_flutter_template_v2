@@ -15,7 +15,7 @@ class SplashServices {
         Duration(seconds: 3),
             () => navigateEndTo(
           context,
-          destination: RoutesName.home_screen,
+          destination: RoutesName.homeScreen,
         ),
       );
     } else {
@@ -23,7 +23,7 @@ class SplashServices {
         Duration(seconds: 3),
             () => navigateEndTo(
           context,
-          destination: RoutesName.login_screen,
+          destination: RoutesName.loginScreen,
         ),
       );
     }

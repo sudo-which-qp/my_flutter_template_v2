@@ -38,7 +38,7 @@ class _AppState extends State<App> {
               : buildDarkTheme(),
           title: 'VNotes',
           builder: FlashyFlushbarProvider.init(),
-          initialRoute: RoutesName.counter_screen,
+          initialRoute: RoutesName.counterScreen,
           onGenerateRoute: Routes.generateRoute,
         );
       },

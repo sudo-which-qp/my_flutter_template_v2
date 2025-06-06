@@ -1,6 +1,5 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:meta/meta.dart';
 import 'package:my_flutter_template_v2/data/exceptions/app_exceptions.dart';
 import 'package:my_flutter_template_v2/data/models/user/user_model.dart';
 import 'package:my_flutter_template_v2/data/repositories/auth_repository.dart';
