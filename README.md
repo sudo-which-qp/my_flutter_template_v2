@@ -11,4 +11,6 @@ will use this template </p>
 any project I want. The CLI will make sure to change the package name in 
 yaml and in all the dart files to suit the name you created for the app</p>
 
-<p> Here is the repo to the CLI <a href='https://github.com/sudo-which-qp/qp_flutter_cli.git'><QP></QP></a></p>
+<p> Here is the repo to the CLI <a href='https://github.com/sudo-which-qp/qp_flutter_cli.git'>QP Flutter CLI</a></p>
+
+# This repo will be made private by the end of this year 2025
