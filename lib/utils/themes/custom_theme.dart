@@ -4,7 +4,7 @@ import 'package:my_flutter_template_v2/utils/colors/m_colors.dart';
 ThemeData buildLightTheme() => ThemeData.light().copyWith(
   cardColor: Colors.white,
   scaffoldBackgroundColor: AppColors.defaultWhite,
-  brightness: Brightness.dark,
+  brightness: Brightness.light,
   iconTheme: IconThemeData(
     color: AppColors.defaultBlack,
   ),
@@ -26,7 +26,7 @@ ThemeData buildLightTheme() => ThemeData.light().copyWith(
     centerTitle: true,
     elevation: 0.0,
     shadowColor: Colors.transparent,
-    color: Colors.transparent,
+    backgroundColor: AppColors.defaultWhite,
     titleTextStyle: const TextStyle(
       fontSize: 20,
       fontWeight: FontWeight.bold,

@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_flutter_template_v2/app/src/app.dart';
 import 'package:my_flutter_template_v2/helpers/hive_manager.dart';
+import 'package:my_flutter_template_v2/presentation/widgets/m_error_widget.dart';
 import 'package:my_flutter_template_v2/services/service_locator.dart';
 import 'package:my_flutter_template_v2/state/cubits/auth_cubit/auth_cubit.dart';
 import 'package:my_flutter_template_v2/state/cubits/theme_cubit/theme_cubit.dart';
@@ -29,6 +30,11 @@ void main() async {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
+
+  FlutterError.onError = (FlutterErrorDetails details) {
+    FlutterError.presentError(details);
+    runApp(MErrorWidget(details: details));
+  };
 
   runApp(
     MultiProvider(
