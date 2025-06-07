@@ -2,6 +2,13 @@ PODS:
   - Alamofire (5.9.1)
   - CryptoSwift (1.8.4)
   - Flutter (1.0.0)
+  - flutter_inappwebview_ios (0.0.1):
+    - Flutter
+    - flutter_inappwebview_ios/Core (= 0.0.1)
+    - OrderedSet (~> 6.0.3)
+  - flutter_inappwebview_ios/Core (0.0.1):
+    - Flutter
+    - OrderedSet (~> 6.0.3)
   - fluttertoast (0.0.2):
     - Flutter
   - GoogleDataTransport (10.1.0):
@@ -61,12 +68,12 @@ PODS:
     - nanopb/encode (= 3.30910.0)
   - nanopb/decode (3.30910.0)
   - nanopb/encode (3.30910.0)
-  - onesignal_flutter (5.3.0):
+  - onesignal_flutter (5.3.3):
     - Flutter
-    - OneSignalXCFramework (= 5.2.10)
-  - OneSignalXCFramework (5.2.10):
-    - OneSignalXCFramework/OneSignalComplete (= 5.2.10)
-  - OneSignalXCFramework/OneSignal (5.2.10):
+    - OneSignalXCFramework (= 5.2.13)
+  - OneSignalXCFramework (5.2.13):
+    - OneSignalXCFramework/OneSignalComplete (= 5.2.13)
+  - OneSignalXCFramework/OneSignal (5.2.13):
     - OneSignalXCFramework/OneSignalCore
     - OneSignalXCFramework/OneSignalExtension
     - OneSignalXCFramework/OneSignalLiveActivities
@@ -74,42 +81,43 @@ PODS:
     - OneSignalXCFramework/OneSignalOSCore
     - OneSignalXCFramework/OneSignalOutcomes
     - OneSignalXCFramework/OneSignalUser
-  - OneSignalXCFramework/OneSignalComplete (5.2.10):
+  - OneSignalXCFramework/OneSignalComplete (5.2.13):
     - OneSignalXCFramework/OneSignal
     - OneSignalXCFramework/OneSignalInAppMessages
     - OneSignalXCFramework/OneSignalLocation
-  - OneSignalXCFramework/OneSignalCore (5.2.10)
-  - OneSignalXCFramework/OneSignalExtension (5.2.10):
+  - OneSignalXCFramework/OneSignalCore (5.2.13)
+  - OneSignalXCFramework/OneSignalExtension (5.2.13):
     - OneSignalXCFramework/OneSignalCore
     - OneSignalXCFramework/OneSignalOutcomes
-  - OneSignalXCFramework/OneSignalInAppMessages (5.2.10):
+  - OneSignalXCFramework/OneSignalInAppMessages (5.2.13):
     - OneSignalXCFramework/OneSignalCore
     - OneSignalXCFramework/OneSignalNotifications
     - OneSignalXCFramework/OneSignalOSCore
     - OneSignalXCFramework/OneSignalOutcomes
     - OneSignalXCFramework/OneSignalUser
-  - OneSignalXCFramework/OneSignalLiveActivities (5.2.10):
+  - OneSignalXCFramework/OneSignalLiveActivities (5.2.13):
     - OneSignalXCFramework/OneSignalCore
     - OneSignalXCFramework/OneSignalOSCore
     - OneSignalXCFramework/OneSignalUser
-  - OneSignalXCFramework/OneSignalLocation (5.2.10):
+  - OneSignalXCFramework/OneSignalLocation (5.2.13):
     - OneSignalXCFramework/OneSignalCore
     - OneSignalXCFramework/OneSignalNotifications
     - OneSignalXCFramework/OneSignalOSCore
     - OneSignalXCFramework/OneSignalUser
-  - OneSignalXCFramework/OneSignalNotifications (5.2.10):
+  - OneSignalXCFramework/OneSignalNotifications (5.2.13):
     - OneSignalXCFramework/OneSignalCore
     - OneSignalXCFramework/OneSignalExtension
     - OneSignalXCFramework/OneSignalOutcomes
-  - OneSignalXCFramework/OneSignalOSCore (5.2.10):
+  - OneSignalXCFramework/OneSignalOSCore (5.2.13):
     - OneSignalXCFramework/OneSignalCore
-  - OneSignalXCFramework/OneSignalOutcomes (5.2.10):
+  - OneSignalXCFramework/OneSignalOutcomes (5.2.13):
     - OneSignalXCFramework/OneSignalCore
-  - OneSignalXCFramework/OneSignalUser (5.2.10):
+  - OneSignalXCFramework/OneSignalUser (5.2.13):
     - OneSignalXCFramework/OneSignalCore
     - OneSignalXCFramework/OneSignalNotifications
     - OneSignalXCFramework/OneSignalOSCore
     - OneSignalXCFramework/OneSignalOutcomes
+  - OrderedSet (6.0.3)
   - package_info_plus (0.4.5):
     - Flutter
   - path_provider_foundation (0.0.1):
@@ -131,6 +139,7 @@ PODS:
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
+  - flutter_inappwebview_ios (from `.symlinks/plugins/flutter_inappwebview_ios/ios`)
   - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
   - http_certificate_pinning (from `.symlinks/plugins/http_certificate_pinning/ios`)
   - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
@@ -160,11 +169,14 @@ SPEC REPOS:
     - MLKitVision
     - nanopb
     - OneSignalXCFramework
+    - OrderedSet
     - PromisesObjC
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
+  flutter_inappwebview_ios:
+    :path: ".symlinks/plugins/flutter_inappwebview_ios/ios"
   fluttertoast:
     :path: ".symlinks/plugins/fluttertoast/ios"
   http_certificate_pinning:
@@ -196,31 +208,33 @@ SPEC CHECKSUMS:
   Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
   CryptoSwift: e64e11850ede528a02a0f3e768cec8e9d92ecb90
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  fluttertoast: 21eecd6935e7064cc1fcb733a4c5a428f3f24f0f
+  flutter_inappwebview_ios: b89ba3482b96fb25e00c967aae065701b66e9b99
+  fluttertoast: 2c67e14dce98bbdb200df9e1acf610d7a6264ea1
   GoogleDataTransport: aae35b7ea0c09004c3797d53c8c41f66f219d6a7
   GoogleMLKit: eff9e23ec1d90ea4157a1ee2e32a4f610c5b3318
   GoogleToolboxForMac: d1a2cbf009c453f4d6ded37c105e2f67a32206d8
   GoogleUtilities: 00c88b9a86066ef77f0da2fab05f65d7768ed8e1
   GTMSessionFetcher: 5aea5ba6bd522a239e236100971f10cb71b96ab6
-  http_certificate_pinning: e0fea5deb9c56c234be0e09fe6991355a39c92e1
-  image_picker_ios: c560581cceedb403a6ff17f2f816d7fea1421fc1
-  local_auth_darwin: 66e40372f1c29f383a314c738c7446e2f7fdadc3
+  http_certificate_pinning: 133f28ad5c2d1ecda2581dd2d2cd9dc74da59012
+  image_picker_ios: 7fe1ff8e34c1790d6fff70a32484959f563a928a
+  local_auth_darwin: 553ce4f9b16d3fdfeafce9cf042e7c9f77c1c391
   MLImage: 0ad1c5f50edd027672d8b26b0fee78a8b4a0fc56
   MLKitBarcodeScanning: 0a3064da0a7f49ac24ceb3cb46a5bc67496facd2
   MLKitCommon: 07c2c33ae5640e5380beaaa6e4b9c249a205542d
   MLKitVision: 45e79d68845a2de77e2dd4d7f07947f0ed157b0e
-  mobile_scanner: fd0054c52ede661e80bf5a4dea477a2467356bee
+  mobile_scanner: af8f71879eaba2bbcb4d86c6a462c3c0e7f23036
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
-  onesignal_flutter: c4442bab25faaf3a3ab77cdcd33f4507f10b05b8
-  OneSignalXCFramework: 1a3b28dfbff23aabce585796d23c1bef37772774
-  package_info_plus: c0502532a26c7662a62a356cebe2692ec5fe4ec4
-  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
-  permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
+  onesignal_flutter: c4ec77cc6bd8f4131d912b982d7dece6c0b9e847
+  OneSignalXCFramework: 6a06ab8a3e44370cb70c6ef31c472b271cdaa7aa
+  OrderedSet: e539b66b644ff081c73a262d24ad552a69be3a94
+  package_info_plus: af8e2ca6888548050f16fa2f1938db7b5a5df499
+  path_provider_foundation: 080d55be775b7414fd5a5ef3ac137b97b097e564
+  permission_handler_apple: 4ed2196e43d0651e8ff7ca3483a069d469701f2d
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
-  share_plus: 8b6f8b3447e494cca5317c8c3073de39b3600d1f
-  shared_preferences_foundation: fcdcbc04712aee1108ac7fda236f363274528f78
-  sqflite_darwin: 5a7236e3b501866c1c9befc6771dfd73ffb8702d
-  url_launcher_ios: 5334b05cef931de560670eeae103fd3e431ac3fe
+  share_plus: 50da8cb520a8f0f65671c6c6a99b3617ed10a58a
+  shared_preferences_foundation: 9e1978ff2562383bd5676f64ec4e9aa8fa06a6f7
+  sqflite_darwin: 20b2a3a3b70e43edae938624ce550a3cbf66a3d0
+  url_launcher_ios: 694010445543906933d732453a59da0a173ae33d
 
 PODFILE CHECKSUM: 3a56134c00f4faee00d7affb92649352996f5f0a
 
