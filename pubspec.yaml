@@ -64,8 +64,7 @@ dependencies:
   url_launcher: ^6.0.10
   onscreen_num_keyboard: ^1.0.4
   ai_barcode_scanner: ^6.0.1
-  qr_flutter:
-  onesignal_flutter: ^5.1.5
+  onesignal_flutter: ^5.3.3
   share_plus: ^11.0.0
   drop_down_list:
     git:
